@@ -11,14 +11,14 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-function inputPertanyaan(pertanyaan) {
+const inputPertanyaan = (pertanyaan) => {
     return new Promise((resolve) => {
         rl.question(pertanyaan, (jawaban) => {
             resolve(jawaban);
         });
     });
-}
-async function travelCostCalculator() {
+};
+const travelCostCalculator = async () => {
 
     do {
         console.log("\n=== TRAVEL COST CALCULATOR ===");
@@ -89,5 +89,5 @@ async function travelCostCalculator() {
     );
 
     rl.close();
-}
+};
 travelCostCalculator();
