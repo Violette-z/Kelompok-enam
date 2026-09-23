@@ -51,36 +51,34 @@ The program receives:
 
 ## 6. Process
 
-This program calculate how much cost we should spend on each trip.
+1. Output: "Masukkan jenis perjalanan"<br>
+   Input:
+   - If "1. Sekali Jalan" → The program will count totalJarak "Jarak"
+   - If "2. Pulang-Pergi" → The program will count totalJarak "Jarak*2"
 
-Output: "Masukkan jenis perjalanan"
-Input:
-- If "1. Sekali Jalan" → The program will count totalJarak "Jarak"
-- If "2. Pulang-Pergi" → The program will count totalJarak "Jarak*2"
+2. Output: "Masukkan jarak perjalanan (km)"<br>
+   input: Jarak
 
-Output: "Masukkan jarak perjalanan (km)"
-input: Jarak
+3. Output: "Masukkan efisiensi bahan bakar (km/liter)"<br>
+   Input: EfisiensiBBM
 
-Output: "Masukkan efisiensi bahan bakar (km/liter)"
-Input: EfisiensiBBM
+4. Output: "Masukkan harga bahan bakar per liter (Rp)"<br>
+   Input: hargaBBM
 
-Output: "Masukkan harga bahan bakar per liter (Rp)"
-Input: hargaBBM
+   *Operator Aritmatika untuk menghitung konsumsi BBM dan total biaya<br>
+   KonsumsiBBM ← totalJarak / efisiensiBBM<br>
+   TotalBiaya  ← konsumsiBBM * hargaBBM
 
-Operator Aritmatika untuk menghitung konsumsi BBM dan total biaya<br>
-KonsumsiBBM ← totalJarak / efisiensiBBM<br>
-TotalBiaya  ← konsumsiBBM * hargaBBM
+5. Output hasil perhitungan:
+   "HASIL PERHITUNGAN BIAYA PERJALANAN"<br>
+   "Total Jarak Perjalanan : ", totalJarak, " km"<br>
+   "Konsumsi Bahan Bakar : ", konsumsiBBM, " liter"<br>
+   "Total Biaya Bahan Bakar: Rp ", totalBiaya<br>
 
-Output hasil perhitungan:
-"HASIL PERHITUNGAN BIAYA PERJALANAN"<br>
-"Total Jarak Perjalanan : ", totalJarak, " km"<br>
-"Konsumsi Bahan Bakar : ", konsumsiBBM, " liter"<br>
-"Total Biaya Bahan Bakar: Rp ", totalBiaya<br>
-
-Output: "Apakah Anda ingin menghitung perjalanan lain? (YES or NO)"
-input:
-- If "YES" → 
-- If "NO"  →
+6. Output: "Apakah Anda ingin menghitung perjalanan lain? (YES or NO)"<br>
+   input:
+   - If "YES" → The program will bring you back to "Masukan jenis perjalanan".
+   - If "NO"  → The program will end.
 
 ---
 
@@ -128,4 +126,4 @@ The program is tested using several test scenarios.
 
 Testing documentation:
 
-`test-cases.md`
+[test-cases.md](test-cases.md)
