@@ -58,7 +58,7 @@ ulangi : String
         OUTPUT "Apakah Anda ingin menghitung perjalanan lain? (YES or NO) : "
         INPUT ulangi 
 
-while ulangi == "YES" OR ulangi == “yes”
+while ulangi == “yes”
 end while
 
 
